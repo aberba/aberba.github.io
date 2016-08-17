@@ -19,7 +19,7 @@ The answer is in the speed benchmark below. ![Vibe.d vrs other web frameworks be
 
 My working environment for this tutorial is Ubuntu Linux 14.04, but you can use Windows, MacOS, etc. as well by installing the D compiler and dub from <https://dlang.org/download.html>. Dub and the D compiler are available for Ubuntu version 16.04 and above in the software repository, so just run `sudo apt install dub`. Note that I will be using dub to build the app in the command-line :) Vibe.d on Linux requires some dependencies which you can install using `sudo apt install -y libssl-dev libevent-dev` on Debian based Linux Distributions or `sudo dnf install –y openssl-devel libevent-devel libcurl-devel` for Fedora based Linux distribution.
 
-# Creating a vibe.d project using dub
+## Creating a vibe.d project using dub
 
 To create a vibe.d project, run `dub init helloworld --type=vibe.d` in the command-line at the location where you want the project to be created. In my case it will be `/home/aberba/workspace/d/`
 
@@ -143,7 +143,7 @@ Pretty neat! Now open your browser and enter `http://127.0.0.1:8080/` into the a
 
 ![Vibe.d Hello, World Demo](/img/2016-08-17-vibe.d-hello-world.png)
 
-# Routing requests and using Diet templates
+## Routing requests and using Diet templates
 
 In example example above, every request is handled by the `hello` function which always send back the text `Hello, World!`. Since we don't normally want to handle every request the same way in a normal web app, we will have to provide a way to handle different request. Using the `URLRouter` class in vibe.d is one way we can route request (GET, POST, etc) for cases where a user browses to `/`, `/users/12`, etc. `URLRouter` class provides a convenient way to assign functions handle different URLs. We will also utilize the vibe.d diet templates.
 
@@ -232,7 +232,7 @@ In diet template, you can access the value a variable in D when passed to the `r
 
 Sweet! Vibe.d is easy to use and straight forward. I recommend it if you want a web framework which is fast and scalable.
 
-# Reference Materials
+## Reference Materials
 
 The D website has a [Getting Started Tour](https://tour.dlang.org/tour/en/basics/imports-and-modules) for the D programming language where you can run D code alongside. A [Vibe.d Tour](https://tour.dlang.org/tour/en/vibed/basics-asynchronous-i-o) tour is also available among others tours (located a the top navigation of the [tours page](https://tour.dlang.org/) ).
 
