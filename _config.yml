@@ -2,7 +2,7 @@
 title: Lawrence Aberba's Blog
 description: 'Where I blog about tech and stuff once in a while.'
 url: 'https://laberba.github.io'
-baseurl: 'jekyll-uno'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'laberba'
 
@@ -12,7 +12,7 @@ author:
   twitter_username: Laberba_
   facebook_username: aberbalawrence
   github_username:  laberba
-#  linkedin_username:  joshgerdes
+#  linkedin_username:  joshgerdesb
 
 defaults:
   -
