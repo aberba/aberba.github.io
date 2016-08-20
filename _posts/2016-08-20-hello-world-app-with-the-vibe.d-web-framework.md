@@ -238,4 +238,4 @@ Sweet! Vibe.d is easy to use and straight forward. I recommend it if you want a 
 
 The D website has a [Getting Started Tour](https://tour.dlang.org/tour/en/basics/imports-and-modules) for the D programming language where you can run D code alongside. A [Vibe.d Tour](https://tour.dlang.org/tour/en/vibed/basics-asynchronous-i-o) tour is also available among others tours (located a the top navigation of the [tours page](https://tour.dlang.org/) ).
 
-You can also can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. [Current D Use](https://dlang.org/areas-of-d-usage.html) also features what organisations are using D to build. The community for is also at <http://forum.dlang.org>
+You can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. [Current D Use](https://dlang.org/areas-of-d-usage.html) also features what organisations are using D to build. The community for is also at <http://forum.dlang.org>
