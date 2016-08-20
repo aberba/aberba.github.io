@@ -2,7 +2,7 @@
 title:  "Hello World app with the vibe.d web framework."
 date:   2016-08-20 16:00:00
 categories: [d]
-tags: [vibe.d]
+tags: [vibe.d, d]
 ---
 In this tutorial, I will share my impression of the vibe.d web framework which is built in the D programming language.
 
