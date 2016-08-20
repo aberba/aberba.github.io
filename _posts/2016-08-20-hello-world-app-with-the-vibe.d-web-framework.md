@@ -15,7 +15,7 @@ In this tutorial, I will share my impression of the vibe.d web framework which i
 
 > ## _"So why vibe.d?"_
 
-The answer is in the speed benchmark below. ![Vibe.d vrs other web frameworks benchmark](/img/2016-08-17-vibe.d-benchmark-2013.png)
+The answer is in the speed benchmark below. ![Vibe.d vrs other web frameworks benchmark](/img/2016-08-20-vibe.d-benchmark-2013.png)
 
 # Setting up your development environment
 
@@ -143,7 +143,7 @@ Please open http://127.0.0.1:8080/ in your browser.
 
 Pretty neat! Now open your browser and enter `http://127.0.0.1:8080/` into the address bar.
 
-![Vibe.d Hello, World Demo](/img/2016-08-17-vibe.d-hello-world.png)
+![Vibe.d Hello, World Demo](/img/2016-08-20-vibe.d-hello-world.png)
 
 ## Routing requests and using Diet templates
 
@@ -230,7 +230,7 @@ html
 
 In diet template, you can access the value a variable in D when passed to the `res.render()` method. Using the `#{ VARIABLE }` expression as seen in the `li` tags will output the value. Now when you re-run dub in the command-line and browse to <http://127.0.0.1:8080/users/3> in your browser you should see the generate page.
 
-![User Profile](/img/2016-08-17-vibe.d-user-profile.png)
+![User Profile](/img/2016-08-20-vibe.d-user-profile.png)
 
 Sweet! Vibe.d is easy to use and straight forward. I recommend it if you want a web framework which is fast and scalable.
 
