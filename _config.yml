@@ -2,7 +2,7 @@
 title: Lawrence Aberba's Blog
 description: 'Where I blog about tech and stuff once in a while.'
 url: 'https://laberba.github.io'
-baseurl: ''
+baseurl: 'jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'laberba'
 
