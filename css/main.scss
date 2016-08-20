@@ -18,8 +18,9 @@
 @import 'includes/footer';
 
 // Syntax
-@import url(monokai.css);
+@import 'monokai.css';
 
 code {
 	font-family: consolas;
+	font-size: 12px;
 }
