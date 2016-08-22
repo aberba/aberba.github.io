@@ -147,7 +147,7 @@ Pretty neat! Now open your browser and enter `http://127.0.0.1:8080/` into the a
 
 ## Routing requests and using Diet templates
 
-In example example above, every request is handled by the `hello` function which always send back the text `Hello, World!`. Since we don't normally want to handle every request the same way in a normal web app, we will have to provide a way to handle different request. Using the `URLRouter` class in vibe.d is one way we can route request (GET, POST, etc) for cases where a user browses to `/`, `/users/12`, etc. `URLRouter` class provides a convenient way to assign functions handle different URLs. We will also utilize the vibe.d diet templates.
+In example example above, every request is handled by the `hello` function which always send back the text `Hello, World!`. Since we don't normally want to handle every request the same way in a web app, we will have to provide a way to handle different request. Using the `URLRouter` class in vibe.d is one way we can route request (GET, POST, etc) for cases where a user browses to `/`, `/users/12`, etc. `URLRouter` class provides a convenient way to assign functions handle different URLs. We will also utilize the vibe.d diet templates.
 
 ```d
 import vibe.d;
@@ -238,4 +238,4 @@ Sweet! Vibe.d is easy to use and straight forward. I recommend it if you want a 
 
 The D website has a [Getting Started Tour](https://tour.dlang.org/tour/en/basics/imports-and-modules) for the D programming language where you can run D code alongside. A [Vibe.d Tour](https://tour.dlang.org/tour/en/vibed/basics-asynchronous-i-o) tour is also available among others tours (located a the top navigation of the [tours page](https://tour.dlang.org/) ).
 
-You can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. [Current D Use](https://dlang.org/areas-of-d-usage.html) also features what organisations are using D to build. The community for is also at <http://forum.dlang.org>
+You can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. The [Current D Use](https://dlang.org/areas-of-d-usage.html) page also features what organisations are using D to build. The community for is also at <http://forum.dlang.org>
