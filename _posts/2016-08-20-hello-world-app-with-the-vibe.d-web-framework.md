@@ -182,7 +182,6 @@ html
         title Vibe.d Demo app
     body
         h1 Hello, World!
-        p Welcome to my awesome vibe.d app.
 ```
 
 Diet template syntax is just like [Jade](http://jade-lang.com/). Aside the Doctype declaration, every other first word in a line is interpreted as an HTML tags. Parent tags are determined by their indentation level. You can check the diet template documentation at <http://vibed.org/templates/diet> for more information.
