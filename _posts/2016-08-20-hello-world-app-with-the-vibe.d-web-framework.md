@@ -99,7 +99,7 @@ void hello(HTTPServerRequest req, HTTPServerResponse res)
 }
 ```
 
-You first import the module for the vibe.d web framework using `import vide.d`. The D module import syntax is `import module_name` to import all modules, or `import module_name.sub_module` to import only a sub-module. In this code I am importing the sub-module `d`.
+You first import the package for the vibe.d web framework using `import vide.d`. The D module import syntax is `import package_name` to import a package along with all modules in it, or `import package_name.module` to import a specific module. In this code I am importing the module `d`.
 
 In a normal D program, you would write a `main()` function which will serve as the entry point of the program, but vibe.d does this behind the scene. All you have to do is to put the entry point code in a `shared static this()` function (module constructor). Next you configure the vibe.d port and IP address(es) settings using `HTTPServerSettings` class;
 
@@ -173,7 +173,7 @@ void index(HTTPServerRequest req, HTTPServerResponse res)
 }
 ```
 
-As you can see, the `URLRouter` class instance, `router`, registers an HTTP GET request with `router.get()` which receives a URL as first parameter and a pointer to the function to handle the request as the second parameter. I my case, I passed the pointer to `index()` which is a modifies version of `hello()` from the first demo. The `render()` method of `HTTPServerResponse res` is then used to render the a diet template, `index.dt`, which I created in the `views` folder. The `!` symbol is a way to specify compile-time arguments in D a.k.a. [templates](https://dlang.org/spec/template.html). Dub will take care of fetching and compiling diet templates from the `views` folder. Notice that the `listenHTTP()` function will now take `router` as the second argument (not a pointer like `&router`). The content of the `index.dt` file is as follows;
+As you can see, the `URLRouter` class instance, `router`, registers an HTTP GET request with `router.get()` which receives a URL as first parameter and a pointer to the function to handle the request as the second parameter. I my case, I passed the pointer to `index()` which is a modifies version of `hello()` from the first demo. The `render()` method of `HTTPServerResponse res` is then used to render the diet template, `index.dt`, which I created in the `views` folder. The `!` symbol is a way to specify compile-time arguments in D a.k.a. [templates](https://dlang.org/spec/template.html). Dub will take care of fetching and compiling diet templates from the `views` folder. Notice that the `listenHTTP()` function will now take `router` as the second argument (not a pointer like `&router`). The content of the `index.dt` file is as follows;
 
 ```jade
 doctype html
