@@ -162,7 +162,7 @@ shared static this()
     settings.port = 8080;
     settings.bindAddresses = ["::1", "127.0.0.1"]
 
-    // We now passing router to listenHTTP()
+    // We are now passing router to listenHTTP()
     listenHTTP(settings, router);
 }
 
@@ -237,4 +237,4 @@ Sweet! Vibe.d is easy to use and straight forward. I recommend it if you want a 
 
 The D website has a [Getting Started Tour](https://tour.dlang.org/tour/en/basics/imports-and-modules) for the D programming language where you can run D code alongside. A [Vibe.d Tour](https://tour.dlang.org/tour/en/vibed/basics-asynchronous-i-o) tour is also available among others tours (located a the top navigation of the [tours page](https://tour.dlang.org/) ).
 
-You can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. The [Current D Use](https://dlang.org/areas-of-d-usage.html) page also features what organisations are using D to build. The community for is also at <http://forum.dlang.org>
+You can also see organisations using D including eBay, Facebook, Remedy Games at <https://dlang.org/orgs-using-d.html>. The [Current D Use](https://dlang.org/areas-of-d-usage.html) page also features what organisations are using D to build. The community forum is also at <http://forum.dlang.org>
