@@ -147,7 +147,7 @@ Pretty neat! Now open your browser and enter `http://127.0.0.1:8080/` into the a
 
 ## Routing requests and using Diet templates
 
-In example example above, every request is handled by the `hello` function which always send back the text `Hello, World!`. Since we don't normally want to handle every request the same way in a web app, we will have to provide a way to handle different request. Using the `URLRouter` class in vibe.d is one way we can route request (GET, POST, etc) for cases where a user browses to `/`, `/users/12`, etc. `URLRouter` class provides a convenient way to assign functions handle different URLs. We will also utilize the vibe.d diet templates.
+In example above, every request is handled by the `hello()` function which always send back the text `Hello, World!`. Since we don't normally want to handle every request the same way in a web app, we will have to provide a way to handle different request. Using the `URLRouter` class in vibe.d is one way we can route request (GET, POST, etc) for cases where a user browses to `/`, `/users/12`, etc. `URLRouter` class provides a convenient way to assign functions to handle different URLs. We will also utilize the vibe.d diet templates.
 
 ```d
 import vibe.d;
