@@ -17,7 +17,7 @@ But there are other groups of software which you are _not required_ to pay befor
 
 Now, have you bothered to know whether the software ___you___ use: operating system, office suite, music player, phone apps, internet browser, game, etc. is free to use? If it is not and you have not paid, then .... hmm ... you may be breaking the law. You may think that the owners do not know, but do you possibly believe they made that software without considering the possibility that someone might try to abuse their rights?
 
-> # "What is the potential problem in using a software illegally?"
+> ### "What is the potential problem in using a software illegally?"
 
 
 By using a software illegally, you are breaking the law which involves several penalties — from imprisonment to a huge fine. You really do not want to find yourself in such a situation. This is why you need to check whether you are using a free-to-use software or commercial.
