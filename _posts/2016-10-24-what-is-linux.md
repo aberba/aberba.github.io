@@ -1,6 +1,6 @@
 ---
 title:  "What is Linux?"
-date:   2016-01-08 15:04:23
+date:   2016-10-24 10:20:23
 categories: [OS]
 tags: [elementaryOS, linux, OS]
 ---
