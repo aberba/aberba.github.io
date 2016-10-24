@@ -5,7 +5,7 @@ categories: [OS]
 tags: [elementaryOS, linux, OS]
 ---
 
-![What is Linux?](images/what-is-linux.png) 
+![What is Linux?](/images/what-is-linux.png) 
 
 You may have heard Linux somewhere or came across it in an article or blog post. Whatever your case may be, do you know what Linux _really_ is?
 
@@ -24,7 +24,7 @@ __Laberba__: Well, as weird as it may sound, Linux is really a kernel. A kernel 
 __Peter__: OK, if Linux is not an operating system, then what is the name of the operating system that uses the Linux kernel?
 __Laberba__: Well, that is not easy to answer with just a name. There are so many operating systems built with the Linux kernel. These class of operating systems are commonly referred to as Linux distributions or Linux distros for short. Examples of the common ones are Ubuntu, Open Suse, Fedora, Red Hat, elementary, and Arch Linux.
 
-![Example of Linux distributions](images/linux-distributions.png) Some common Linux distribution logos
+![Example of Linux distributions](/images/linux-distributions.png) Some common Linux distribution logos
 
 __Peter__: So if Linux is just a kernel as you said, why is it a big deal. Why all the noise as if Linux is a revolutionary system.
 __Laberba__: Waw! this is the question I have been waiting to answer. Thank you very very much for asking. I really appreciate that. OK, Linux is a big deal because it actually a big deal.
@@ -78,7 +78,7 @@ When you don't have your favorite software running in any Linux distro, it means
 __Peter__: OK what about this? I heard Linux distro do not have an appealing look and feel. They do not look nice.
 __Laberba__: What? Where are you getting these false information? Do you use android? elementary? Ubuntu? KDE? Try any of those and see how nice a Linux distro can look. Moreover, most distro can be configured to look the way you want it to be. With most other operating systems, you are stuck with just one look and feel forever, whether you like it or not.
 
-![elementary OS 0.4](images/elementary-os.png) elementary OS
+![elementary OS 0.4](/images/elementary-os.png) elementary OS
 
 __Peter__: Even with all that you have said, why should I switch to using a Linux distro whey my current OS is good for me? Why change when I can browse, download, watch videos, play games, do my assignment, etc. with my current OS.
 __Laberba__: You don't have to switch to Linux if you don't want to. Besides you usually just don't use your computer for anything beside those you just mentioned and you don't need a Linux distro to do that.
