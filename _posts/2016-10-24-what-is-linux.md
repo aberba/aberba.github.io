@@ -5,8 +5,6 @@ categories: [OS]
 tags: [elementaryOS, linux, OS]
 ---
 
-## What is Linux?
-
 ![What is Linux?](images/what-is-linux.png) 
 
 You may have heard Linux somewhere or came across it in an article or blog post. Whatever your case may be, do you know what Linux _really_ is?
