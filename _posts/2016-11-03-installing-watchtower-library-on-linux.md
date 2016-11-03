@@ -5,7 +5,7 @@ categories: [linux]
 tags: [linux]
 ---
 
-![Watchtower Library Installation Setup](../images/watchtower-library-application.png)
+![Watchtower Library Installation Setup](/images/watchtower-library-application.png)
 Figure 1: Watchtower Library Application on Ubuntu Linux
 
 > __NOTE__: The information presented here might change (or might not apply) over time. Jehovah's Witnesses and other Christians alike might particular find this tutorial useful for Bible studies.
@@ -47,25 +47,25 @@ Now that we have PlayOnLinux installed, we can now use it to install Watchtower 
 ### Lauching PlayOnLinux
 Once you have installed PlayOnLinux, you can launch it from your applications menu. When launched, it will look similar to the image (screenshot) below;
 
-![The PlayOnLinux application](../images/play-on-linux-application.jpg)
+![The PlayOnLinux application](/images/play-on-linux-application.jpg)
 Figure 2: The PlayOnLinux Application running on Ubuntu Linux
 
 ### Installing Watchtower Library
 To begin with Watchtower Library installation, click on the `Install` button as indicated in the screenshot above. This will launch a dialog which will fetch all the list of applications supported officially in PlayOnLinux as show below;
 
-![List of officially supported application in PlayOnLinux](../images/play-on-linux-database.jpg)
+![List of officially supported application in PlayOnLinux](/images/play-on-linux-database.jpg)
 Figure 3: List of application officially supported in PlayOnLinux
 
 > __NOTE__ I will be using the 2015 edition of the watchTower Library to demonstrate so I do not guarantee that any other version (newer or older) will work with this process. However, this should also work for the 2014 edition. 
 
 Look for Watchtower Library 2014 from the list of applications supported, either by scrolling down or using the search entry on-top of the list as shown below;
 
-![Watchtower Library 2014 edition](../images/watchtower-library-2014-in-list.png)
+![Watchtower Library 2014 edition](/images/watchtower-library-2014-in-list.png)
 Figure 4: Watchtower Library 2014 edition in the list
 
 As you can see, the Watchtower Library 2014 edition the only option, however the 2015 edition will also work. Select `Watchtower Library 2014` and click on the `Install` button beneath to proceed with the installation. This will launch a dialog (Wizard) which will assist you with the installation process as show below;
 
-![Watchtower Library Installation Wizard](../images/watchtower-library-install-wizard.png)
+![Watchtower Library Installation Wizard](/images/watchtower-library-install-wizard.png)
 Figure 5: Watchtower Library Installation Wizard
 
 Click on the `Next` button to continue. The installer will present you with three options;
@@ -76,7 +76,7 @@ Click on the `Next` button to continue. The installer will present you with thre
 
 I will select Option 2 and click `Next` to proceed. You will now be presented with another dialog with two options as show below;
 
-![Watchtower Library Installation Wizard](../images/watchtower-library-select-setup.png)
+![Watchtower Library Installation Wizard](/images/watchtower-library-select-setup.png)
 Figure 6: Watchtower Library Installation Wizard
 
 1. __Use a setup file on my computer__ - Use this option if you have copied the Watchtower Library application files onto your computer.
@@ -84,7 +84,7 @@ Figure 6: Watchtower Library Installation Wizard
 
 I will select Option 1 and click `Next` after which I will be presented with and dialog with a button labelled `Browse`. Click on that button to select the Watchtower Library application executable labelled `Setup.exe` from your computer as shown below;
 
-![Watchtower Library Installation Setup](../images/watchtower-library-select-setup-executable.png)
+![Watchtower Library Installation Setup](/images/watchtower-library-select-setup-executable.png)
 Figure 7: Watchtower Library Executable
 
 > If you select option 2, browse to the CD ROM to select the executable. There may be other executables for Windows Phone (those old Windows Phones) but that is not covered in this tutorial. 
@@ -93,20 +93,20 @@ After selecting the executable, click `Next` to proceed. This will launch a dial
 
 After everything is successful, PlayOnLinux will immediately launch another window (an installation wizard) which will take your through the process of installing the _actual_ Watchtower Library application. Proceed by click next, next, next... (affirm the default options). Once the installation is complete, PlayOnLinux application should have Watchtower Library listed in the main window as shown below;
 
-![Watchtower Library Installed in PlayOnLinix](../images/watchtower-library-installed-in-playonlinux.png)
+![Watchtower Library Installed in PlayOnLinix](/images/watchtower-library-installed-in-playonlinux.png)
 Figure 8: Watchtower Library Installed in PlayOnLinix
 
 
 ### Managing Wine versions
 We are _almost_ done except that the version of Wine installed by default in PlayOnlinux does not work for running the installed Watchtower Library application. Therefore, we will have to install an __OLDER__ version (version 1.7.38 at the time of this tutorial). Click on the `Tools` menu from  the PlayOnLinux main window and select `Manage Wine versions` as show below;
 
-![Manage Wine Versions Menu](../images/play-on-linux-wine-versions-manager-menu.jpg)
+![Manage Wine Versions Menu](/images/play-on-linux-wine-versions-manager-menu.jpg)
 Figure 9: Manage Wine Versions Menu
 
 This will present you with a dialog which shows the available Wine version in the left pane (fetched from the Wine project database) and those installed on your computer in the right pane. On the left section, scroll to find version `1.7.38`, select it and click on the button labelled with the greater-than symbol (`>`) in the middle to install it. This process may also take some few minutes (again, depending on your internet connection speed :)  ) so be patient. After version `1.7.38` of Wine has been installed, it will show up in the right pane as show below;
 
 
-![Wine version manager dialog](../images/play-on-linux-wine-versions-dialog.jpg) Figure 9: Wine version manager dialog
+![Wine version manager dialog](/images/play-on-linux-wine-versions-dialog.jpg) Figure 9: Wine version manager dialog
 
 > NOTE: You may also install version 1.7.35 in addition to version 1.7.38 for safe keeping.
 
@@ -115,7 +115,7 @@ Once this is done, close the dialog to return to the main PlayOnLinux window to 
 ### Launching Watchtower Library
 Select it from the main window and click on the `Run` button at the top. This will launch the splash screen of the Watchtower Library application after which your will be presented with the main window of Watchtower Library.
 
-![Watchtower Library Application](../images/watchtower-library-installed.png)
+![Watchtower Library Application](/images/watchtower-library-installed.png)
 Figure 10: Watchtower Library Application 
 
 Whew!! that was quiet a process, let me know in the comments section below if you encounter any problem with installation.
