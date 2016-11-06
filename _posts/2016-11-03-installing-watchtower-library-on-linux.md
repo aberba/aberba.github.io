@@ -1,11 +1,12 @@
 ---
 title:  "Installing Watchtower Library in Linux"
-date:   2016-10-03 15:04:23
+date:   2016-11-05 15:04:23
 categories: [linux]
 tags: [linux]
 ---
 
 ![Watchtower Library Installation Setup](/images/watchtower-library-application.png)
+
 Figure 1: Watchtower Library Application on Ubuntu Linux
 
 > __NOTE__: The information presented here might change (or might not apply) over time. Jehovah's Witnesses and other Christians alike might particular find this tutorial useful for Bible studies.
