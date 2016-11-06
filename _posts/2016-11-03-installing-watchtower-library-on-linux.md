@@ -24,7 +24,7 @@ I will be using Ubuntu version 14.04 (a Linux distribution) for this tutorial bu
 
 ## Installing PlayOn Linux
 
-Wine is available in the software center so you can either search and install from there or you can use the Ubuntu command-line with the following command;
+PlayOnLinux is available in the software center so you can either search and install from there or you can use the Ubuntu command-line with the following command;
 
 ```sh
 sudo apt install -y playonlinux
@@ -55,16 +55,16 @@ Figure 2: The PlayOnLinux Application running on Ubuntu Linux
 To begin with Watchtower Library installation, click on the `Install` button as indicated in the screenshot above. This will launch a dialog which will fetch all the list of applications supported officially in PlayOnLinux as show below;
 
 ![List of officially supported application in PlayOnLinux](/images/play-on-linux-database.jpg)
-Figure 3: List of application officially supported in PlayOnLinux
+Figure 3: List of applications officially supported in PlayOnLinux
 
-> __NOTE__ I will be using the 2015 edition of the watchTower Library to demonstrate so I do not guarantee that any other version (newer or older) will work with this process. However, this should also work for the 2014 edition. 
+> __NOTE__ I will be using the 2015 edition of the Watchtower Library to demonstrate so I do not guarantee that any other version (newer or older) will work with this same process. However, this should also work for the 2014 edition. 
 
 Look for Watchtower Library 2014 from the list of applications supported, either by scrolling down or using the search entry on-top of the list as shown below;
 
 ![Watchtower Library 2014 edition](/images/watchtower-library-2014-in-list.png)
 Figure 4: Watchtower Library 2014 edition in the list
 
-As you can see, the Watchtower Library 2014 edition the only option, however the 2015 edition will also work. Select `Watchtower Library 2014` and click on the `Install` button beneath to proceed with the installation. This will launch a dialog (Wizard) which will assist you with the installation process as show below;
+As you can see, the Watchtower Library 2014 edition is the only option, however the 2015 edition will also work. Select `Watchtower Library 2014` and click on the `Install` button beneath to proceed with the installation. This will launch a dialog (Wizard) which will assist you with the installation process as show below;
 
 ![Watchtower Library Installation Wizard](/images/watchtower-library-install-wizard.png)
 Figure 5: Watchtower Library Installation Wizard
