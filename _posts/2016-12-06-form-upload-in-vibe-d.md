@@ -1,6 +1,6 @@
 ---
 title:  "Form upload in vibe.d"
-date:   2016-08-20 16:00:00
+date:   2016-12-06 16:00:00
 categories: [d]
 tags: [d]
 ---
