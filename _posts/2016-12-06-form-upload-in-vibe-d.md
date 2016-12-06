@@ -2,7 +2,7 @@
 title:  "Form upload in vibe.d"
 date:   2016-12-06 16:00:00
 categories: [d]
-tags: [d]
+tags: [d, vibe.d]
 ---
 
 > This tutorial assumes you have a basic knowledge in web development and knows basic programming. I recommend that you first read my previous post titled ["Hello world app with the vibe.d web framework"](https://laberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/) if you are new to vibe.d web framework.  
