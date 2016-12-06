@@ -7,7 +7,7 @@ tags: [d, vibe.d]
 
 > This tutorial assumes you have a basic knowledge in web development and knows basic programming. I recommend that you first read my previous post titled ["Hello world app with the vibe.d web framework"](https://laberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/) if you are new to vibe.d web framework.  
 
-In my previous post on [using vibe.d web framework](https://laberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/), I showed how vibe.d can make web development easy. I this tutorial, I will show how you can use vibe.d to create a form to submit data and files.
+In my previous post on [using vibe.d web framework](https://laberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/), I showed how vibe.d can make web development easy. In this tutorial, I will show how you can use vibe.d to create a form to submit data and files.
 
 Create a new vibe.d project. I will call mine `vibe-upload`;
 
