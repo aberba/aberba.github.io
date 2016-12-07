@@ -70,7 +70,7 @@ static this()
 
 Unlike the previous vibe.d post, the `router.get()` HTTP route here uses the `staticTemplate` function to render `index.dt` as a static template for all GET requests (You can configure it however you want). 
 
-Now its time to write a function to handle form submission using POST requests. Let's write an `upload` function above the `main` function and register it in `router` to handle form submission through `/upload` URL as specified in the form property (`action='/upload'`).
+Now its time to write a function to handle form submission using a POST request. Let's write an `upload` function above the `main` function and register it in `router` to handle form submission through `/upload` URL as specified in the form property (`action='/upload'`).
 
 ```d
 void upload(HTTPServerRequest req, HTTPServerResponse res)
@@ -142,7 +142,7 @@ In the above code, we use a try/catch block to handle exceptions in cases where 
 ![Single file upload form](/images/form-upload2.png)
 
 
-Fill-in the title input, selecting a sample file and submit. If everything is successful, you should see the title input value in your command-line and the file should be uploaded to the `public/uploads` folder.
+Fill-in the title input, select a sample file and submit form. If everything is successful, you should see the title input value printed in your command-line and the file should be uploaded to the `public/uploads` folder.
 
 I hope you find this tutorial useful. In future tutorial, I will show how you can upload multiple files.
 
