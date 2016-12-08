@@ -137,7 +137,15 @@ void upload(HTTPServerRequest req, HTTPServerResponse res)
 }
 ```
 
-In the above code, we use a try/catch block to handle exceptions in cases where moving file from the temporal folder to `public/uploads` fail (file permission restriction, etc). Build the project again and the form should now look like the screenshot below;
+In the above code, we use a try/catch block to handle exceptions in cases where moving file from the temporal folder to `public/uploads` fail (file permission restriction, etc). 
+
+Now it's time to register the `upload` function to the `/upload` POST route in `router`. Add the following code below `router.get("*", staticTemplate!"index.dt");` to do that;
+
+```d
+router.post("/upload", &upload);
+```
+
+Now we are all set test our app. Build the project again and the form should now look like the screenshot below;
 
 ![Single file upload form](/images/form-upload2.png)
 

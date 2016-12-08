@@ -1,7 +1,7 @@
 # Site settings
 title: Lawrence Aberba's Blog
 description: 'Where I blog about tech and stuff once in a while.'
-url: 'https://laberba.github.io'
+url: 'https://aberba.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'laberba'
@@ -11,7 +11,7 @@ author:
   email: karabutaworld@gmail.com
   twitter_username: Laberba_
   facebook_username: aberbalawrence
-  github_username:  laberba
+  github_username:  aberba
 #  linkedin_username:  aberba
 
 defaults:
