@@ -139,6 +139,8 @@ void upload(HTTPServerRequest req, HTTPServerResponse res)
 
 In the above code, we use a try/catch block to handle exceptions in cases where moving file from the temporal folder to `public/uploads` fail (file permission restriction, etc). 
 
+> __NOTE:__ The maximum default size for file upload is 2MB (2097152 bytes). You can change that in `settings.maxRequestSize = XLU;` where `X` is the number of bytes (1MB is 1048576 bytes). See the [documentation of maxRequestSize](http://vibed.org/api/vibe.http.server/HTTPServerSettings) for more options.
+
 Now it's time to register the `upload` function to the `/upload` POST route in `router`. Add the following code below `router.get("*", staticTemplate!"index.dt");` to do that;
 
 ```d
