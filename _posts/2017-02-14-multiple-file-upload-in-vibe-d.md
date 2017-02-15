@@ -9,7 +9,7 @@ tags: [d,  vibe.d, web development]
 
 Previously, I did a demo on [how to submit a form in vibe.d](https://aberba.github.io/2016/form-upload-in-vibe-d/) including a file upload. Now its time to demo multiple file upload which sometimes come in handy. This post serves as continuation so refer to it to catch up.
 
-Similar to the previous post, we will create an `upload` function which will handle file upload on the server side. However, I will only implement the multiple file upload functionality without boring you with textual data which I did [previously](https://aberba.github.io/2016/form-upload-in-vibe-d/). Create a new vibe.d project and build upon it to a point where you have the `upload` function (You may use code from the previous post).
+Similar to the previous post, we will create an `upload` function which will handle file uploads on the server side. However, I will only implement the multiple file upload functionality without boring you with textual data which I did [previously](https://aberba.github.io/2016/form-upload-in-vibe-d/). Create a new vibe.d project and build upon it to a point where you have the `upload` function (You may use code from the previous post).
 
 So lets rock and roll ASAP, shall we. Multiple file input (of any number) can be specified in an HTML form by appending square brackets (`"[]"`) to the value of the `name` property.
 
@@ -29,16 +29,13 @@ body
             input(name='picture[]', type='file')
             br
             input(name='picture[]', type='file')
-        p
-
-        br
         
         button(type='submit') Upload
 ```
 
-The `enctype='multipart/form-data'` is necessary to submit files in a form as discussed in my previous post. As you can see, the value of the `name` property of all the file inputs is `picture[]`. This make it easy to identify all those files, as we will see below, as belonging to the same category. This is particularly useful for uploading one or more of a certain file without having to give each file a unique `name` value for identification on the server side.
+The `enctype='multipart/form-data'` is necessary to submit files in a form as discussed in my previous post. As you can see, the value of the `name` property of all the file inputs is `picture[]`. This makes it easy to identify all those files, as we will see below, as belonging to the same category. This is particularly useful for uploading one or more of a certain file without having to give each file a unique `name` value for identification on the server side.
 
-Within the upload function, add the following code:
+Within the `upload` function, add the following code:
 
 ```d
 void upload(HTTPServerRequest req, HTTPServerResponse res)
