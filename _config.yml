@@ -1,6 +1,6 @@
 # Site settings
-title: Lawrence Aberba's Blog
-description: 'Where I blog about tech and stuff once in a while.'
+title: Lawrence Aberba
+description: 'Where I show my work and blog about tech and stuff.'
 url: 'https://aberba.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
