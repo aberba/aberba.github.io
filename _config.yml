@@ -1,6 +1,6 @@
 # Site settings
 title: Lawrence Aberba
-description: 'I'm a generalist full stack developer, open source contributor and an avid Linux user.'
+description: 'A generalist full stack developer, open source contributor and an avid Linux user.'
 url: '/'
 baseurl: 'http://aberba.com'
 # google_analytics: 'UA-XXXXXX-X'
