@@ -2,7 +2,7 @@
 title: Lawrence Aberba
 description: 'I'm a generalist full stack developer, open source contributor and an avid Linux user.'
 url: 'aberba.com'
-baseurl: '/'
+baseurl: 'http://aberba.com'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'laberba'
 
