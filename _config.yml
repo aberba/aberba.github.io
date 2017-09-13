@@ -1,7 +1,7 @@
 # Site settings
 title: Lawrence Aberba
 description: 'I'm a generalist full stack developer, open source contributor and an avid Linux user.'
-url: 'https://aberba.github.io'
+url: 'aberba.com'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'laberba'
