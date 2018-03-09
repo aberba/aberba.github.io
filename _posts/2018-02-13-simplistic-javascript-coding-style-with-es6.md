@@ -2,7 +2,7 @@
 title:  "Simplistic JavaScript coding style with ES6"
 date:   2018-02-13 10:20:23
 categories: [JavaScript]
-tags: [JavaScript, Code Simplicity, nodejs]
+tags: [JavaScript, code simplicity, nodejs]
 ---
 
 ![JavaScript](/images/javascript.png) 
