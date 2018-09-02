@@ -3,7 +3,7 @@ title: Lawrence Aberba
 description: 'Full Stack developer, Open Source contributor (UIX, NodeJS, React, Cloud, ...)'
 url: '/'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-125100053-1'
 disqus_shortname: 'laberba'
 
 author:
