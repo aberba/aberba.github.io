@@ -1,6 +1,6 @@
 # Site settings
 title: Lawrence Aberba
-description: 'Full Stack developer & Open Source contributor (UIX, D, Node.JS, React, Cloud, PWAs, SaaS, Online Payments, Dashboards, ...). Simplicity. Modern Web. Passionate about SaaS.'
+description: 'Full stack engineer & Open Source contributor (UIX, React + Node.Js, D, PWAs, SaaS, Payments, Dashboards, ...). Simplicity. Modern Web. Passionate about SaaS.'
 url: '/'
 baseurl: ''
 google_analytics: 'UA-125100053-1'
@@ -8,7 +8,7 @@ disqus_shortname: 'laberba'
 
 author:
   name: 'Lawrence Aberba'
-  email: aberbamx@gmail.com
+  email: karabutaworld@gmail.com
   twitter_username: aberbamx
   facebook_username: aberbalawrence
   github_username:  aberba
