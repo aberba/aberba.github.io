@@ -5,7 +5,7 @@ categories: [D]
 tags: [D, Dlang, Open Source]
 ---
 
-![Back to blogging](/images/2020-welcome.jpg) 
+![Back to blogging](/images/2020-welcome.png) 
 
 So I'm back to writing on my bog, long story short.
 
