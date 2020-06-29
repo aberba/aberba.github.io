@@ -81,6 +81,10 @@ pre.highlight code,
 	white-space: nowrap;
 }
 
+.portfolio .work div:first-child h3 {
+    margin-top: 0;
+}
+
 .portfolio .work div:first-child img {
     width: 100%;
 }
@@ -93,8 +97,8 @@ pre.highlight code,
     margin: 0 0 0 1em;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .portfolio .work {
-        flex-direction: colum;
+        flex-direction: column;
     }
 }
