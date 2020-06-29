@@ -83,3 +83,9 @@ pre.highlight code,
 .portfolio .work div:first-child img {
     width: 100%;
 }
+
+@media (max-width: 500px){
+    .portfolio .work {
+        flex-direction: colum;
+    }
+}
