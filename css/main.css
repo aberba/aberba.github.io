@@ -66,7 +66,7 @@ pre.highlight code,
 }
 
 .portfolio .work div {
-    width: 50%;
+    width: calc(50% - .5em);
 }
 
 .portfolio .work .tags a {
@@ -85,7 +85,15 @@ pre.highlight code,
     width: 100%;
 }
 
-@media (max-width: 500px){
+.portfolio .work div:first-child img {
+    width: 100%;
+}
+
+.portfolio .work div:nth-child(2) {
+    margin: 0 0 0 1em;
+}
+
+@media screen and (max-width: 500px){
     .portfolio .work {
         flex-direction: colum;
     }
