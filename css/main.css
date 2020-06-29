@@ -62,6 +62,7 @@ pre.highlight code,
 .portfolio .work {
     display: flex;
     flex-direction: row;
+    margin: 0 0 2em 0;
 }
 
 .portfolio .work div {
