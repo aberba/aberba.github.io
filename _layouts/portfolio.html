@@ -2,29 +2,14 @@
 layout: default
 ---
 <h2>My Work:</h2>
-<div class="categories">
-  {% for catitem in site.categories  %}
-  <a href="#{{  catitem[0] }}">{{  catitem[0] }}</a>
-  {% endfor %}
+<div class="portfolio">
+    <section class="work">
+        <div><img src="/images/portfolio/opal-energy.png" /></div>
+        <div>
+            <h3>Opal Energy Solutions</h3>
+            <p>A Wordpress-like CMS built for a client</p>
+            <div class="tags"><a>PHP</a></div>
+            <p><a href="https://github.com/aberba/opal-energy">See the code code</a></p>
+        </div>
+    </section>
 </div>
-
-<!-- iterate through all categories on the site -->
-{% for catitem in site.categories %}
-<!-- for each tag, create an anchor by using the tag name as an id -->
-<div id="{{ catitem[0] }}">
-  <h3> {{ catitem[0] }} </h3> <!-- for create a heading -->
-
-  <ul>
-    <!-- create the list of posts -->
-    <!-- iterate through all the posts on the site -->
-    {% for post in site.posts %}
-    <!-- list only those which contain the current tag -->
-    {% if post.categories contains catitem[0] %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</div>
-{% endfor %}
