@@ -9,7 +9,7 @@ tags: [D]
 
 Here's the thing. When something looks good, most of us are hard-wired to think it also tastes good. Yeah that's a real thing. Some food chains go even as far to make their product look good on camera...watch this video.
 
-<iframe src="https://www.youtube.com/embed/oSd0keSj2W8" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen="allowfullscreen">&nbsp;</iframe>
+<iframe src="https://www.youtube.com/embed/oSd0keSj2W8" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen="allowfullscreen"> </iframe>
 
 First of all, if you have published a D package in the [Dub](https://code.dlang.org) package repository, congratulations. 
 
@@ -60,6 +60,6 @@ Then I take my "congratulations" back. But seriously, it unfair to leave me in t
 
 If you want your package to be used by everyone, it has to be...watch this video.
 
-<iframe src="https://www.youtube.com/embed/an74PBcdgx4" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen="allowfullscreen">&nbsp;</iframe>
+<iframe src="https://www.youtube.com/embed/an74PBcdgx4" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen="allowfullscreen"> </iframe>
 
 So I'll just leave it there. Thanks for reading. 
