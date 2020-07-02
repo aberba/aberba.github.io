@@ -14,6 +14,9 @@ author:
   github_username:  aberba
   linkedin_username:  lawrence-aberba-a2b65a143
 
+plugins:
+  - jekyll-paginate
+
 defaults:
   -
     scope:
