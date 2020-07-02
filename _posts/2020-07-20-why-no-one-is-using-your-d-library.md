@@ -57,7 +57,7 @@ That's not good as a first impression to get me hooked.
 
 The `examples` folder is always welcomed for more detailed use cases. 
 
-## Nah, I'm not into this whole Open Source responsibility thing.
+## :> Nah, I'm not into this whole Open Source responsibility thing.
 Then I take my "congratulations" back. But seriously, its unfair to leave me in the dark. You owe me one. I just congratulated you. 
 
 If you want your package to be used by everyone, it has to be...watch this video.
