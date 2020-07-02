@@ -2,14 +2,14 @@
 title:  "Why no one is using your D library"
 date:   2020-07-02 10:20:23
 categories: [D]
-tags: [D, Open Source]
+tags: [D]
 ---
 
 ![No one](/images/2020-why-no-one-is-using-your-d-library.png) 
 
 Here's the thing. When something looks good, most of us are hard-wired to think it also tastes good. Yeah that's a real thing. Some food chains go even as far to make their product look good on camera...watch this video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oSd0keSj2W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtubePlayer.html id=oSd0keSj2W8 %}
 
 First of all, if you have published a D package in the [Dub](https://code.dlang.org) package repository, congratulations. 
 
@@ -59,6 +59,9 @@ The `examples` folder is always welcomed for more detailed use cases.
 Then I take my "congratulations" back. But seriously, it unfair to leave me in the dark. You owe me one. I just congratulated you. 
 
 If you want your package to be used by everyone, it has to be...watch this video.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/an74PBcdgx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+{% include youtubePlayer.html id=an74PBcdgx4 %}
+
 
 So I'll just leave it there. Thanks for reading. 
