@@ -7,7 +7,7 @@ tags: [D]
 
 ![No one](/images/2020-elementary-os.png) 
 
-For the past three years, I've had this side project. I've been helping to translate [elementary OS](https://elementary.io), a computer operating system, to Twi (Akan) language, is commonly spoken in Ghana. This will hopefully make it easily accessible for many **people who can only read or speak Twi use modern technology** in a language they know and understand. 
+For the past three years, I've had this side project. I've been helping to translate [elementary OS](https://elementary.io), a computer operating system, to Twi (Akan) language, commonly spoken in Ghana. This will hopefully make it easily accessible for many people who can **only read or speak Twi**, use modern technology in ―  a language they know and understand. 
 
 This it part of an [Open Twi](https://github.com/aberba/open-twi) initiative to **make modern technology accessible** in Twi. Think of people closer to you, people you know and love. They will really benefit from of efforts like these...parents, relatives, neighbours and friends who can only read, speak or understand Twi. 
 
