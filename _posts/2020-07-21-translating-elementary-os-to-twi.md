@@ -1,8 +1,8 @@
 ---
 title:  "Translating elementary OS to Twi"
 date:   2020-07-02 10:20:23
-categories: [D]
-tags: [D]
+categories: [Linux]
+tags: [elementary OS, translation]
 ---
 
 ![No one](/images/2020-elementary-os.png) 

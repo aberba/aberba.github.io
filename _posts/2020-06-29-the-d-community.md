@@ -2,7 +2,7 @@
 title:  "The D community and Homecoming"
 date:   2020-06-29 10:20:23
 categories: [D]
-tags: [D, Dlang, Open Source]
+tags: [Nnipa, open source]
 ---
 
 ![Back to blogging](/images/2020-welcome.png) 
