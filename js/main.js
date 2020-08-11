@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
+  if (window.location.pathname !== '{{ site.baseurl }}') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
