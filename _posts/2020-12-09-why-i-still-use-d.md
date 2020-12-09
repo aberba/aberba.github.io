@@ -21,13 +21,13 @@ improve the overall ecosystem. Think about it 🤔
 
 > So what's my point in relation to D?
 
-D is a unique but still familiar language. It has almost all the attributes
-suited for a mainstream programming languages. It's statically typed but still
-manages to be fluid and easy to write code in like any dynamically typed
-language. It's got all the powerful features I've seen in any other language out
-there, either comparably similar or better. Moreover, it's got some of the most
-brilliant people behind it. This is why I've gone as far to write several
-articles about why D is great for development including
+[D](https://dlang.org) is a unique but still familiar language. It has almost
+all the attributes suited for a mainstream programming languages. It's
+statically typed but still manages to be fluid and easy to write code in like
+any dynamically typed language. It's got all the powerful features I've seen in
+any other language out there, either comparably similar or better. Moreover,
+it's got some of the most brilliant people behind it. This is why I've gone as
+far to write several articles about why D is great for development including
 [this one on OpenSource.com](https://opensource.com/article/17/5/d-open-source-software-development).
 
 > So why isn't D mainstream?
@@ -37,8 +37,8 @@ So first of all you may ask, why is it even necessary to be mainstream or
 quantity?
 
 I agree with this sentiment to an extent but the cost definitely outweighs the
-benefit. Whe a larger community is well managed with clear roadmap and
-communication of high-level goals, it can accomplish more. **Clear roadmap and
+benefit. When a larger community is well managed with clear roadmap and
+communication of high-level goals, they can accomplish more. **Clear roadmap and
 communication of high-level goals** ahh? Yep. That's one of the key missing
 ingredients of the D community even as small and nimble as it is. Despite the
 clever language design and seemingly promising direction, D lacks in the soft
@@ -49,7 +49,7 @@ side. This is what I believe holds the grow and adoption of the language back.
 ### A train with no destination
 
 -   The roadmap of the D language is still very unclear and the project page on
-    GitHib has not been updated for over a year. See
+    GitHub has not been updated for over a year. See
     https://github.com/dlang/dmd/projects
 -   There's little to no communication of language objects and mobilization of
     the community to reach certain milestones. There's almost no organizational
@@ -58,27 +58,28 @@ side. This is what I believe holds the grow and adoption of the language back.
 
 > So why do I still use D?
 
--   D is technically the best out there for me. It's the only language that has
-    a clean and familiar syntax.
+-   D is technically the best out there for me. It's the only modern system
+    programming language with a clean and familiar syntax.
 -   It's very powerful and capable of solving any domain problem: web
     development, network applications, system development, scripting, gaming,
     etc. This is rare because almost every language out there is either suited
     for one thing or the other.
 -   It's got a package system. Unless you've got infinite amount of time on a
     project, you'll need to use code others have written to solve similar
-    problems you may have. D makes it easy to discover such packages from it's
-    package repository. Almost all modern language have similar centralized
-    package repositories.
--   A great community. D has gone one of the best communities I've ever seen.
-    The community is very welcoming and helpful.
+    problems you may have. D makes it easy to discover such packages from
+    [it's package repository](https://code.dlang.org). Almost all modern
+    language have similar centralized package repositories.
+-   A great community. D has got one of the best communities I've ever seen. The
+    community is very welcoming and helpful. The only thing we lack now is
+    mobilization and direction.
 -   It keeps getting better. D has consistently improved over the years that
     I've been in the community. Yes, it moves at a slow pace but it doesn't
     invalidate the fact that things keep getting better.
 -   It can be better. Comparatively, D heavily lacks in community organization,
     leadership communication, development tools, third-party packages,
-    documentation, learning resources, onboarding experience and general
-    ecosystem polish. These can make D unappealing for certain projects with the
-    need for a matured ecosystem. However, this can be made better.
+    user-friendly documentation, learning resources, onboarding experience and
+    general ecosystem polish. These can make D unappealing for certain projects
+    with the need for a matured ecosystem. However, this can be made better.
 
-As this year comes to and end, I hope the D Language Foundation revisit past
-mistakes and look for way to make things better.
+As this year comes to an end, I hope the D Language Foundation and community
+revisit past mistakes and look for way to make things better. I am here to stay.
