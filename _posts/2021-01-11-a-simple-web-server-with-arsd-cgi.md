@@ -10,7 +10,7 @@ tags: [D, arsd, webdev]
 Frameworks for building web servers in the D programming language come with
 different conventions and design choices. I previously wrote about using the
 vibe.d web framework both in it's
-[route-base style](https://aberba.com/page2/2016/hello-world-app-with-the-vibe.d-web-framework/)
+[route-base style](https://aberba.com/2016/hello-world-app-with-the-vibe.d-web-framework/)
 and declarative
 [web interface](https://aberba.com/2018/using-vibe-d-web-interface/) style.
 However there's another alternative, the
