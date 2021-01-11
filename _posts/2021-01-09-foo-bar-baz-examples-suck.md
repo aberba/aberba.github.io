@@ -1,6 +1,6 @@
 ---
 title: "Why foo/bar/baz examples suck"
-date: 2020-12-15 10:20:23
+date: 2021-01-09 10:20:23
 categories: [programming]
 tags: [D]
 ---

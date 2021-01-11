@@ -1,29 +1,31 @@
 # Site settings
 title: Lawrence Aberba
-description: 'Full stack engineer & Open Source contributor (UIX, React + Node.Js, D, PWAs, SaaS, Payments, Dashboards, ...). Simplicity. Modern Web. Passionate about SaaS.'
-url: '/'
-baseurl: ''
-google_analytics: 'UA-125100053-1'
-disqus_shortname: 'laberba'
+description:
+    "I design and code. Full stack engineer (UIX, React + Node.Js, D, PWAs,
+    SaaS, Payments, Dashboards, ...). Open Source contributor. Simplicity.
+    Modern Web. Passionate about SaaS."
+url: "/"
+baseurl: ""
+google_analytics: "UA-125100053-1"
+disqus_shortname: "laberba"
 
 author:
-  name: 'Lawrence Aberba'
-  email: karabutaworld@gmail.com
-  twitter_username: aberbamx
-  facebook_username: aberba.lawrence
-  github_username:  aberba
-  linkedin_username:  lawrence-aberba-a2b65a143
+    name: "Lawrence Aberba"
+    email: karabutaworld@gmail.com
+    twitter_username: aberbamx
+    facebook_username: aberba.lawrence
+    github_username: aberba
+    linkedin_username: lawrence-aberba-a2b65a143
 
 plugins:
-  - jekyll-paginate
+    - jekyll-paginate
 
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+    - scope:
+          path: ""
+          type: "posts"
+      values:
+          layout: "post"
 
 # Build settings
 destination: _site
@@ -33,10 +35,10 @@ markdown: kramdown
 highlighter: rouge
 
 kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+    # use Github Flavored Markdown
+    input: GFM
+    # do not replace newlines by <br>s
+    hard_wrap: false
 
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+gems: ["jekyll-paginate"]
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "screenshot.png"]

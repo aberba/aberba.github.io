@@ -1,19 +1,30 @@
 ---
-title:  "Using the vibe.d web interface"
-date:   2018-03-09 10:20:23
-categories: [d]
+title: "Using the vibe.d web interface"
+date: 2018-03-09 10:20:23
+categories: [programming]
 tags: [d, code simplicity, vibe.d]
 ---
 
-![Vibe.d](/images/vibe-d-web-interface-cover.png) 
+![Vibe.d](/images/vibe-d-web-interface-cover.png)
 
-I previously wrote a [hello world app with the vibe.d web framework](https://aberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/) where I used the `URLRouter` class to route requests directly. However there is a more *simplistic and scalable* way of writing a web service by using the **Web Interface**. This is possible with [D programming language's](https://dlang.org) powerful meta-programming ability: to generate code during compilation.
+I previously wrote a
+[hello world app with the vibe.d web framework](https://aberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework/)
+where I used the `URLRouter` class to route requests directly. However there is
+a more _simplistic and scalable_ way of writing a web service by using the **Web
+Interface**. This is possible with [D programming language's](https://dlang.org)
+powerful meta-programming ability: to generate code during compilation.
 
-> You may want to checkout my OpenSource.com blog post on [5 reasons the D programming language is a great choice for development](https://opensource.com/article/17/5/d-open-source-software-development) which highlights some "awesomeness" of D.
+> You may want to checkout my OpenSource.com blog post on
+> [5 reasons the D programming language is a great choice for development](https://opensource.com/article/17/5/d-open-source-software-development)
+> which highlights some "awesomeness" of D.
 
 First, lets see a basic template vibe.d project.
 
-> If you are new to vibe.d web framework, I recommend you read my previous tutorials on [1. Getting started](https://aberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework), [2. Form upload](https://aberba.github.io/2016/form-upload-in-vibe-d) and [3. Multiple file upload](https://aberba.github.io/2017/multiple-file-upload-in-vibe-d).
+> If you are new to vibe.d web framework, I recommend you read my previous
+> tutorials on
+> [1. Getting started](https://aberba.github.io/2016/hello-world-app-with-the-vibe.d-web-framework),
+> [2. Form upload](https://aberba.github.io/2016/form-upload-in-vibe-d) and
+> [3. Multiple file upload](https://aberba.github.io/2017/multiple-file-upload-in-vibe-d).
 
 ```d
 import vibe.vibe;
@@ -37,7 +48,11 @@ void main()
 }
 ```
 
-As you may have noticed above, the `URLRouter` class instance provides a `registerWebInterface()` method to register the web interface class called `WebService`. This web interface class, which will be created later, shall contain methods for handling all HTTP routes. `listenHTTP()` is used to configure the IP address and port for the server.
+As you may have noticed above, the `URLRouter` class instance provides a
+`registerWebInterface()` method to register the web interface class called
+`WebService`. This web interface class, which will be created later, shall
+contain methods for handling all HTTP routes. `listenHTTP()` is used to
+configure the IP address and port for the server.
 
 Now let's see how to implement the web interface itself:
 
@@ -50,13 +65,26 @@ class WebService {
 }
 ```
 
-Run the server with `dub` in your command-line and open the IP and port configured, in my case `http://127.0.0.1:8080/`, in your browser. If everything was done correctly, you should be greeted with `Hello, World!`. Now let's understand how the web interface works.
+Run the server with `dub` in your command-line and open the IP and port
+configured, in my case `http://127.0.0.1:8080/`, in your browser. If everything
+was done correctly, you should be greeted with `Hello, World!`. Now let's
+understand how the web interface works.
 
 > ## Let's do the math!
 
-A web interface class methods maps to HTTP routes and serves as request handler. The routes and HTTP methods are derived from the web interface class method names. In the above example, the `WebService` class method  `index()` handles the index (`/`) route &mdash; its name is *required* to be exactly `index` and has a return type of `void`. It receives an `HTTPServerRequest` and `HTTPServerResponse` object as arguments when the route is accessed. 
+A web interface class methods maps to HTTP routes and serves as request handler.
+The routes and HTTP methods are derived from the web interface class method
+names. In the above example, the `WebService` class method `index()` handles the
+index (`/`) route &mdash; its name is _required_ to be exactly `index` and has a
+return type of `void`. It receives an `HTTPServerRequest` and
+`HTTPServerResponse` object as arguments when the route is accessed.
 
-Besides the index route *requirement*, all other routes (GET, POST, DELETE, PUT, PATCH) are *expected* to have a certain prefix to indicate the type of request. The prefixes may be one of (post, create, add) or **no-prefix** for a POST request, (get, query) for GET, (delete, remove, erase) for DELETE, (patch, update) for PATCH and (put, set) for PUT. The remaining part of the method name after the prefix is used as route path.
+Besides the index route _requirement_, all other routes (GET, POST, DELETE, PUT,
+PATCH) are _expected_ to have a certain prefix to indicate the type of request.
+The prefixes may be one of (post, create, add) or **no-prefix** for a POST
+request, (get, query) for GET, (delete, remove, erase) for DELETE, (patch,
+update) for PATCH and (put, set) for PUT. The remaining part of the method name
+after the prefix is used as route path.
 
 For example, a GET request to the route `/users` may be represented as:
 
@@ -76,7 +104,10 @@ void createUsers(...) {}
 void addUsers(...) {}
 ```
 
-The HTTP method and path can be overridden with User [Defined Attributes (UDAs)](https://dlang.org/spec/attribute.html#UserDefinedAttribute) &mdash; `@method()` UDA for overriding the HTTP method and `@path()` for the path as follows:
+The HTTP method and path can be overridden with User
+[Defined Attributes (UDAs)](https://dlang.org/spec/attribute.html#UserDefinedAttribute)
+&mdash; `@method()` UDA for overriding the HTTP method and `@path()` for the
+path as follows:
 
 ```d
 // route is overridden to GET /users/all
@@ -85,6 +116,10 @@ The HTTP method and path can be overridden with User [Defined Attributes (UDAs)]
 void allUsers(...) {}
 ```
 
-There are many more features unleashed through UDAs such as authentication, route access protection, HTTP header modification, error handling and the like.
+There are many more features unleashed through UDAs such as authentication,
+route access protection, HTTP header modification, error handling and the like.
 
-All these and many more are possible due to D's support for code generation at compile-time &mdash; the underlining route handling implementations are generated by the compiler. I will demonstrate more advanced web interface features in future tutorial. 
+All these and many more are possible due to D's support for code generation at
+compile-time &mdash; the underlining route handling implementations are
+generated by the compiler. I will demonstrate more advanced web interface
+features in future tutorial.
