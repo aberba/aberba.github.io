@@ -33,12 +33,9 @@ especially when you do not have system access to install system dependencies
 > Zero system dependencies!!
 
 Now, I'm will be using the D package manager, dub, to run the server app. Create
-a dub projects by running `dub init arsd-cgi-demo` command from your command
-line where `arsd-cgi-demo` is your project's name. Make sure to add
+a dub project by running `dub init arsd-cgi-demo` command from your command line
+where `arsd-cgi-demo` is your project's name. Make sure to add
 `arsd-official:cgi` when prompted to add a dependency as follows:
-
-> The D package manager called [dub](https://dub.pm/getting_started) to create
-> and run the project. Dub comes bundled with the D compiler when installed.
 
 ```sh
 dub init arsd-cgi-demo
@@ -55,7 +52,10 @@ Successfully created an empty project in '/home/aberba/workspace/d/arsd-cgi-demo
 Package successfully created in arsd-cgi-demo
 ```
 
-So lets see a sample ards server:
+> The D package manager called [dub](https://dub.pm/getting_started) to create
+> and run the project. Dub comes bundled with the D compiler when installed.
+
+So lets see an example ards server:
 
 ```d
 import arsd.cgi;
@@ -66,16 +66,16 @@ void handler(Cgi cgi)
 
 	switch (cgi.pathInfo)
 	{
-	case "/":
-		cgi.write("Hello, World!");
-		break;
+		case "/":
+			cgi.write("Hello, World!");
+			break;
 
-		// other routes go here
+			// other routes go here
 
-	default:
-		cgi.setResponseStatus("404 Not found");
-		cgi.write("Requested page not found.");
-		break;
+		default:
+			cgi.setResponseStatus("404 Not found");
+			cgi.write("Requested page not found.");
+			break;
 	}
 }
 
@@ -92,10 +92,9 @@ with all the facilities to handle both receiving an http request and sending a
 response.
 
 `cgi.pathInfo` is used to match the request route and response according. You
-may also use `cgi.requestMethod` to also match the request method which may be
-one of `cgi.RequestMethod.GET`, `cgi.RequestMethod.POST`,
-`cgi.RequestMethod.PATCH` and friends. The following code show how you may do
-that in the `handler` function:
+may also use `cgi.requestMethod` to match the request method which may be one of
+`cgi.RequestMethod.GET`, `cgi.RequestMethod.POST`, `cgi.RequestMethod.PATCH` and
+friends. The following code shows how you may do that in the `handler` function:
 
 ```d
 void handler(Cgi cgi)
@@ -104,39 +103,40 @@ void handler(Cgi cgi)
 
 	switch (cgi.pathInfo)
 	{
-	case "/":
-		if (cgi.requestMethod == cgi.RequestMethod.GET)
-		{
-			cgi.write("Hello from GET");
-		}
-		else
-		{
-			// you may also send 404, whatever you want, 🤷‍♀️
+		case "/":
+			if (cgi.requestMethod == cgi.RequestMethod.GET)
+			{
+				cgi.write("Hello from GET");
+			}
+			else
+			{
+				// you may also send 404. Whatever you want, 🤷‍♀️
 
-			cgi.write("Hello work something else");
+				cgi.write("Hello, I'm also here.");
 
-		}
-		break;
+			}
+			break;
 
-		// other routes go here
+			// other routes go here
 
-	default:
-		cgi.setResponseStatus("404 Not found");
-		break;
+		default:
+			cgi.setResponseStatus("404 Not found");
+			cgi.write("Requested page not found.");
+			break;
 	}
 }
 ```
 
-You may also notice the `cgi.setResponseStatus()` method for sending both a
-response status code and string. The prefix, `404`, becomes the response code
-whilst the text that follows, in this case `Not found`, then becomes the
-response text. This is a convention used in certain aspects of arsd. I will dive
-into those aspects in another post later.
+You may also notice that the `cgi.setResponseStatus()` method for setting both a
+response status code and text. The prefix, `404`, becomes the response code
+whilst the text that follows, in this case `Not found`, then becomes the status
+text. This is a convention used in certain aspects of arsd CGI. I will dive into
+those aspects in another post later.
 
-Now since arsd is written in D with a very powerful metaprogramming support, it
-is capable fro abstracting things to minimize the lines of code needed to
-implement certain functionalities. Let's see how arsd support the idiomatic D
-way setting up the web server:
+Now since arsd CGI is written in D, a language with very powerful
+metaprogramming support, it is capable of abstracting things to minimize the
+lines of code needed to implement certain functionalities. Let's see the same
+example in an idiomatic D code:
 
 ```d
 void handler(Cgi cgi)
@@ -151,18 +151,16 @@ That's it!. No need to manually initialize a request server or register a port
 manually. Arsd takes care of generating the code needed to handle all of that
 for you. Pretty need.
 
-This is just a tease of what arsd CGI web framework can do. Its also supports a
-declarative of handling requests with a URL
+This is just a tease of what arsd CGI web framework can do. It also supports a
+declarative style for handling requests with a URL
 [dispatcher](http://dpldocs.info/experimental-docs/arsd.cgi.dispatcher.html). I
-will write about later.
+will write about that later.
 
 Now it's not all rainbow and sunshine with arsd CGI. It does not support all the
 features you might get **out of the box** with Vibe.d such a SSL cert
 integration (you may use NGINX as a proxy to handle SSL). This might be good
 thing or bad depending on what you are used to or your use case. As mentioned,
 arsd CGI is just one module in a whole
-[arsd collection](http://dpldocs.info/experimental-docs/arsd.html). It's meant
-for you to pick and choose additional modules based on your needs including
-packages available
-inhttp://dpldocs.info/experimental-docs/arsd.cgi.dispatcher.html the
-[D package repository](https://code.dlang.org).
+[collection](http://dpldocs.info/experimental-docs/arsd.html). It's meant for
+you to pick and choose additional modules based on your needs including packages
+available in the [D package repository](https://code.dlang.org).
