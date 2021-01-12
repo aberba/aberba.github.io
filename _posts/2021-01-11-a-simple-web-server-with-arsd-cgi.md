@@ -32,10 +32,11 @@ especially when you do not have system access to install system dependencies
 
 > Zero system dependencies!!
 
-Now, I'm will be using the D package manager, dub, to run the server app. Create
-a dub project by running `dub init arsd-cgi-demo` command from your command line
-where `arsd-cgi-demo` is your project's name. Make sure to add
-`arsd-official:cgi` when prompted to add a dependency as follows:
+Now, I'm will be using the D package manager,
+[dub](https://dub.pm/getting_started), to run the server app. Create a dub
+project by running `dub init arsd-cgi-demo` command from your command line where
+`arsd-cgi-demo` is your project's name. Make sure to add `arsd-official:cgi`
+when prompted to add a dependency as follows:
 
 ```sh
 dub init arsd-cgi-demo
@@ -52,10 +53,9 @@ Successfully created an empty project in '/home/aberba/workspace/d/arsd-cgi-demo
 Package successfully created in arsd-cgi-demo
 ```
 
-> The D package manager called [dub](https://dub.pm/getting_started) to create
-> and run the project. Dub comes bundled with the D compiler when installed.
+> Dub comes bundled with the D compiler when installed.
 
-So lets see an example ards server:
+So lets see an example server:
 
 ```d
 import arsd.cgi;
@@ -139,12 +139,14 @@ lines of code needed to implement certain functionalities. Let's see the same
 example in an idiomatic D code:
 
 ```d
+import arsd.cgi;
+
 void handler(Cgi cgi)
 {
     // the rest of the content goes here
 }
 
-GenericMain!handler;
+mixin GenericMain!handler;
 ```
 
 That's it!. No need to manually initialize a request server or register a port
