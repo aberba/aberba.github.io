@@ -151,7 +151,7 @@ mixin GenericMain!handler;
 
 That's it!. No need to manually initialize a request server or register a port
 manually. Arsd takes care of generating the code needed to handle all of that
-for you. Pretty need.
+for you. Pretty neat.
 
 This is just a tease of what arsd CGI web framework can do. It also supports a
 declarative style for handling requests with a URL
